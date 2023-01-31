@@ -1,0 +1,81 @@
+html{
+    background: rgb(150, 149, 149);
+    color: white;
+    text-align: center;
+}
+header{
+    margin: 8px;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(134, 38, 38);
+    border-radius: 4px;
+}
+
+nav ul{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+    
+}
+.navegacion a:hover{
+    background: rgb(133, 131, 131);
+
+}
+ul{
+    background: rgb(154, 59, 59);
+    list-style: none;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 4px 10px;
+    border: 1px solid black;
+    display: inline-block;
+    
+
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    margin:  70px;
+    padding: 10px;
+    background: rgb(154, 59, 59);
+
+}
+footer a{
+    
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    list-style: none;
+    text-decoration: none;
+    font-size: 30px;
+    color: blue;
+}
+
+
+#blockquote{
+    text-align: center;
+}
+
+#ol{
+    text-align: center;
+}
+#small{
+    text-align: center;
+}
+#figure{
+    text-align: center;
+}
+#figcaption{
+    text-align: center;
+}
+.botones{
+    float:left;
+    width: 15%;
+    height: 400px;
+}
+

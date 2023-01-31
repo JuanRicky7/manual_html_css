@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="estilo_css.css" type="text/css">
+
+    <style>
+        #em{
+            display: none;
+        }
+        #word{
+            display: none;
+        }
+        #vertical{
+            display: none;
+        }
+        #table{
+            display: none;
+        }
+        #empty{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <header>Manual de CSS</header>
+
+<section class="botones">
+
+    <nav>
+        <ul class="navegacion"> 
+
+            <button id="boton" onclick="em();">Propiedad em</button>
+            <button id="boton" onclick="word_spacing();">Propiedad word-spacing</button>
+            <button id="boton" onclick="vertical_align();">Propiedad vertical-align</button>
+            <button id="boton" onclick="table_layout();">Propiedad table-layout</button>
+            <button id="boton" onclick="empty_cells();">Propiedad empty-cells</button>
+        
+            <script>
+                function em(){
+                    document.getElementById('em').style.display = 'block';
+                    document.getElementById('word').style.display = 'none';
+                    document.getElementById('vertical').style.display = 'none';
+                    document.getElementById('table').style.display = 'none';
+                    document.getElementById('empty').style.display = 'none';
+                }
+                function word_spacing(){
+                    document.getElementById('em').style.display = 'none';
+                    document.getElementById('word').style.display = 'block';
+                    document.getElementById('vertical').style.display = 'none';
+                    document.getElementById('table').style.display = 'none';
+                    document.getElementById('empty').style.display = 'none';
+                }
+                function vertical_align(){
+                    document.getElementById('em').style.display = 'none';
+                    document.getElementById('word').style.display = 'none';
+                    document.getElementById('vertical').style.display = 'block';
+                    document.getElementById('table').style.display = 'none';
+                    document.getElementById('empty').style.display = 'none';
+                }
+                function table_layout(){
+                    document.getElementById('em').style.display = 'none';
+                    document.getElementById('word').style.display = 'none';
+                    document.getElementById('vertical').style.display = 'none';
+                    document.getElementById('table').style.display = 'block';
+                    document.getElementById('empty').style.display = 'none';
+                }
+                function empty_cells(){
+                    document.getElementById('em').style.display = 'none';
+                    document.getElementById('word').style.display = 'none';
+                    document.getElementById('vertical').style.display = 'none';
+                    document.getElementById('table').style.display = 'none';
+                    document.getElementById('empty').style.display = 'block';
+                }
+            </script>
+            
+        </ul>
+    </nav>
+
+</section>
+
+    <div id="em">
+        <p>Relativo al tamaño de la fuente del elemento 
+            ( 2em significa 2 veces el tamaño de la fuente actual)</p>
+    </div>
+    <div id="word">
+        <p>Espacio entre palabras</p>
+    </div>
+    <div id="vertical">
+        <p>Alineación vertical</p>
+    </div>
+    <div id="table">
+        <p>Formato de las celdas, filas y columnas</p>
+    </div>
+    <div id="empty">
+        <p> Visibilidad de los bordes de celdas sin contenido</p>
+    </div>
+    
+    
+    <footer>
+        <a href="index.html" title="pagina_principal">Regresar</a>
+    </footer>
+</body>
+</html>

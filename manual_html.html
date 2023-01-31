@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="stylesheet" href="estilo_html.css" type="text/css">
+
+    <style>
+        #blockquote{
+            display: none;
+        }
+        #ol{
+            display: none;
+        }
+        #small{
+            display: none;
+        }
+        #figure{
+            display: none;
+        }
+        #figcaption{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   
+
+    <header>Manual de HTML</header>
+
+<section class="botones">
+
+    <nav>
+        <ul class="navegacion"> 
+
+            <button id="boton" onclick="block();">Etiqueta blockquote</button>
+            <button id="boton" onclick="ol();">Etiqueta ol</button>
+            <button id="boton" onclick="small();">Etiqueta small</button>
+            <button id="boton" onclick="figure();">Etiqueta figure</button>
+            <button id="boton" onclick="figcaption();">Etiqueta figcaption</button>
+        
+            <script>
+                function block(){
+                    document.getElementById('blockquote').style.display = 'block';
+                    document.getElementById('small').style.display = 'none';
+                    document.getElementById('figure').style.display = 'none';
+                    document.getElementById('figcaption').style.display = 'none';
+                    document.getElementById('ol').style.display = 'none';
+                }
+                function ol(){
+                    document.getElementById('blockquote').style.display = 'none';
+                    document.getElementById('ol').style.display = 'block';
+                    document.getElementById('small').style.display = 'none';
+                    document.getElementById('figure').style.display = 'none';
+                    document.getElementById('figcaption').style.display = 'none';
+                }
+                function small(){
+                    document.getElementById('blockquote').style.display = 'none';
+                    document.getElementById('ol').style.display = 'none';
+                    document.getElementById('small').style.display = 'block';
+                    document.getElementById('figure').style.display = 'none';
+                    document.getElementById('figcaption').style.display = 'none';
+                }
+                function figure(){
+                    document.getElementById('blockquote').style.display = 'none';
+                    document.getElementById('ol').style.display = 'none';
+                    document.getElementById('small').style.display = 'none';
+                    document.getElementById('figure').style.display = 'block';
+                    document.getElementById('figcaption').style.display = 'none';
+                }
+                function figcaption(){
+                    document.getElementById('blockquote').style.display = 'none';
+                    document.getElementById('ol').style.display = 'none';
+                    document.getElementById('small').style.display = 'none';
+                    document.getElementById('figure').style.display = 'none';
+                    document.getElementById('figcaption').style.display = 'block';
+                }
+            </script>
+            
+        </ul>
+    </nav>
+
+</section>
+
+    <div id="blockquote">
+        <p>Se usan para indicar que el contenido es texto citado.</p>
+    </div>
+    <div id="ol">
+        <p>Etiquetas para crear una lista ordenada</p>
+    </div>
+    <div id="small">
+        <p>Utilizada para dejar un comentario aparte, del tipo una nota de derechos de autoría, 
+            u otros textos que no son esenciales para la comprensión del documento.</p>
+    </div>
+    <div id="figure">
+        <p> Indica una figura ilustrada como parte del documento HTML5.</p>
+    </div>
+    <div id="figcaption">
+        <p> Utilizada para definir la leyenda de una figura.</p>
+    </div>
+
+<footer>
+    <a href="index.html" title="pagina_principal">Regresar</a>
+</footer>
+    
+    
+</body>
+</html>
